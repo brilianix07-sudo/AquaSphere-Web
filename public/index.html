@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaSphere Community - Roblox Server Portal</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom scrollbar agar serasi dengan tema dark mode */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #020617;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #334155;
+        }
+
+        /* Class khusus untuk menyembunyikan scrollbar di area Galeri */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased pb-24">
+
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-900 px-6 md:px-12 py-4 flex justify-between items-center relative">
+        <!-- Logo & Brand -->
+        <div class="flex items-center gap-3">
+            <img src="assets/images/LOGO AQUASPHERE.png" alt="Logo AquaSphere" class="h-10 w-auto drop-shadow-[0_0_8px_rgba(56,189,248,0.5)]">
+            <div class="text-xl font-black tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 hidden sm:block">
+                AQUASPHERE
+            </div>
+        </div>
+        
+        <!-- Menu (Dipaksa persis di tengah layar) -->
+        <div class="hidden lg:flex absolute left-1/2 -translate-x-1/2 space-x-8 text-xs uppercase tracking-widest font-semibold">
+            <a href="#hero" class="hover:text-blue-400 transition-colors">Beranda</a>
+            <a href="#informasi" class="hover:text-blue-400 transition-colors">Informasi</a>
+            <a href="#tutorial" class="hover:text-blue-400 transition-colors">Tutorial</a>
+            <a href="#map" class="hover:text-blue-400 transition-colors">Map</a>
+            <a href="#galeri" class="hover:text-blue-400 transition-colors">Galeri</a>
+        </div>
+        
+        <!-- Call to Action -->
+        <div>
+            <a href="https://discord.gg/ghHvQjGcq" target="_blank" class="bg-blue-600/10 hover:bg-blue-600/20 text-blue-400 border border-blue-500/30 px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition-all">
+                Join Discord
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="min-h-screen flex flex-col justify-center items-center text-center px-4 relative pt-16">
+        <!-- Efek Cahaya Latar Belakang -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+        
+        <h1 class="text-4xl md:text-7xl font-extrabold tracking-tight mb-4 max-w-4xl bg-gradient-to-b from-white to-slate-400 text-transparent bg-clip-text">
+            AQUASPHERE COMMUNITY
+        </h1>
+        <p class="text-slate-400 md:text-xl max-w-2xl font-light tracking-wide mb-8">
+            Jelajahi dunia virtual tanpa batas. Rasakan pengalaman bermain game Roblox yang premium, imersif, dan penuh petualangan bersama komunitas kami.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#informasi" class="bg-blue-600 hover:bg-blue-500 text-white px-8 py-3.5 rounded-xl font-semibold shadow-lg shadow-blue-500/20 transition-all">
+                Lihat Informasi Server
+            </a>
+            <a href="#galeri" class="bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-800 px-8 py-3.5 rounded-xl font-semibold transition-all">
+                Lihat Galeri
+            </a>
+        </div>
+    </section>
+
+    <!-- INFORMASI SECTION -->
+    <section id="informasi" class="max-w-6xl mx-auto px-6 py-20 scroll-mt-20">
+        <div class="text-center mb-16">
+            <h2 class="text-2xl md:text-4xl font-bold mb-3 tracking-tight">INFORMASI SERVER</h2>
+            <div class="w-12 h-1 bg-blue-500 mx-auto rounded-full"></div>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-slate-900/40 border border-slate-900 rounded-2xl p-6 hover:border-slate-800 transition-all backdrop-blur-sm">
+                <div class="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-400 font-bold mb-4">01</div>
+                <h3 class="text-lg font-semibold mb-2">Tentang Server</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">AquaSphere adalah server komunitas Roblox yang berfokus pada kualitas gameplay, kestabilan map, dan lingkungan yang ramah untuk semua pemain.</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-slate-900/40 border border-slate-900 rounded-2xl p-6 hover:border-slate-800 transition-all backdrop-blur-sm">
+                <div class="w-10 h-10 rounded-xl bg-cyan-500/10 flex items-center justify-center text-cyan-400 font-bold mb-4">02</div>
+                <h3 class="text-lg font-semibold mb-2">Aturan Komunitas</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Kami menjunjung tinggi rasa saling menghormati. Dilarang keras menggunakan cheat, melakukan eksploitasi bug, atau mengganggu kenyamanan pemain lain.</p>
+            </div>
+            <!-- Card 3 (Cara Bergabung dengan Tombol Discord) -->
+            <div class="bg-slate-900/40 border border-slate-900 rounded-2xl p-6 hover:border-slate-800 transition-all backdrop-blur-sm flex flex-col justify-between">
+                <div>
+                    <div class="w-10 h-10 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 font-bold mb-4">03</div>
+                    <h3 class="text-lg font-semibold mb-2">Cara Bergabung</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Bergabunglah ke dalam Discord kami untuk mendapatkan informasi server, update terbaru, dan tautan undangan langsung ke dalam game.</p>
+                </div>
+                <a href="https://discord.gg/ghHvQjGcq" target="_blank" class="block w-full text-center bg-emerald-600/10 hover:bg-emerald-600/20 text-emerald-400 border border-emerald-500/30 px-4 py-3 rounded-lg text-sm font-bold tracking-wider transition-all">
+                    GABUNG DISCORD
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TUTORIAL SECTION -->
+    <section id="tutorial" class="max-w-4xl mx-auto px-6 py-20 scroll-mt-20">
+        <div class="text-center mb-16">
+            <h2 class="text-2xl md:text-4xl font-bold mb-3 tracking-tight">PANDUAN & TUTORIAL</h2>
+            <div class="w-12 h-1 bg-blue-500 mx-auto rounded-full"></div>
+        </div>
+
+        <div class="space-y-4">
+            <div class="bg-slate-900/60 border border-slate-900 rounded-xl p-5 hover:border-slate-800 transition-all">
+                <h3 class="text-base font-semibold text-blue-400 mb-1">Bagaimana cara klaim item gratis di server?</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Pastikan Anda sudah bergabung dengan grup Roblox AquaSphere terlebih dahulu. Setelah itu, masuk ke dalam game dan datangi area reward di lobi utama untuk mengambil item spesial Anda.</p>
+            </div>
+            <div class="bg-slate-900/60 border border-slate-900 rounded-xl p-5 hover:border-slate-800 transition-all">
+                <h3 class="text-base font-semibold text-blue-400 mb-1">Mengatasi kendala lag atau patah-patah?</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Turunkan kualitas grafik pada pengaturan menu Roblox Anda menjadi manual (level 1-3). Pastikan juga koneksi internet Anda stabil untuk menghindari kendala sinkronisasi data visual.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAP SECTION -->
+    <section id="map" class="max-w-6xl mx-auto px-6 py-20 scroll-mt-20">
+        <div class="text-center mb-16">
+            <h2 class="text-2xl md:text-4xl font-bold mb-3 tracking-tight">EKSPLORASI MAP</h2>
+            <div class="w-12 h-1 bg-blue-500 mx-auto rounded-full"></div>
+            <p class="text-slate-400 mt-4 max-w-2xl mx-auto text-sm">Temukan berbagai destinasi unik di dalam ekosistem AquaSphere. Pilih vibe favoritmu dan bergabunglah bersama pemain lainnya.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- Map 1: Middle of Lake -->
+            <div class="bg-slate-900/60 border border-slate-900 rounded-2xl overflow-hidden hover:border-blue-500/50 transition-all group flex flex-col">
+                <div class="aspect-square w-full overflow-hidden relative">
+                    <!-- Pastikan gambar "Logo Middle of Lake.png" sudah dipindah ke folder images -->
+                    <img src="assets/images/Logo Middle of Lake.png" alt="Middle of Lake" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute top-3 right-3 bg-slate-950/80 backdrop-blur text-[10px] font-bold px-3 py-1 rounded-full text-blue-400 border border-blue-500/30">
+                        HANGOUT
+                    </div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold mb-2 text-white">Middle of Lake</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
+                        Tempat hangout yang cozy dengan pemandangan danau saat senja. Dilengkapi dengan Voice Chat (VC) on untuk ngobrol santai bareng teman komunitas.
+                    </p>
+                    <a href="https://www.roblox.com/id/games/130959713351296/Middle-of-Lake" target="_blank" class="block w-full text-center bg-blue-600 hover:bg-blue-500 text-white px-4 py-3 rounded-xl text-sm font-bold transition-all shadow-lg shadow-blue-500/20">
+                        MAINKAN SEKARANG
+                    </a>
+                </div>
+            </div>
+
+            <!-- Map 2: Coming Soon -->
+            <div class="bg-slate-900/30 border border-slate-900 rounded-2xl overflow-hidden flex flex-col opacity-75">
+                <div class="aspect-square w-full overflow-hidden relative bg-slate-800/30 flex items-center justify-center">
+                    <span class="text-slate-600 font-bold text-4xl">?</span>
+                    <div class="absolute top-3 right-3 bg-slate-950/80 backdrop-blur text-[10px] font-bold px-3 py-1 rounded-full text-slate-400 border border-slate-800">
+                        COMING SOON
+                    </div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold mb-2 text-slate-300">Segera Hadir</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6 flex-grow">
+                        Destinasi baru sedang dirancang oleh tim developer kami. Pantau terus informasi terbarunya melalui server Discord AquaSphere.
+                    </p>
+                    <div class="block w-full text-center bg-slate-900 text-slate-500 px-4 py-3 rounded-xl text-sm font-bold border border-slate-800 cursor-not-allowed">
+                        DALAM PENGEMBANGAN
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map 3: Coming Soon -->
+            <div class="bg-slate-900/30 border border-slate-900 rounded-2xl overflow-hidden flex flex-col opacity-75">
+                <div class="aspect-square w-full overflow-hidden relative bg-slate-800/30 flex items-center justify-center">
+                    <span class="text-slate-600 font-bold text-4xl">?</span>
+                    <div class="absolute top-3 right-3 bg-slate-950/80 backdrop-blur text-[10px] font-bold px-3 py-1 rounded-full text-slate-400 border border-slate-800">
+                        COMING SOON
+                    </div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold mb-2 text-slate-300">Segera Hadir</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6 flex-grow">
+                        Destinasi baru sedang dirancang oleh tim developer kami. Pantau terus informasi terbarunya melalui server Discord AquaSphere.
+                    </p>
+                    <div class="block w-full text-center bg-slate-900 text-slate-500 px-4 py-3 rounded-xl text-sm font-bold border border-slate-800 cursor-not-allowed">
+                        DALAM PENGEMBANGAN
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- GALERI SECTION -->
+    <section id="galeri" class="max-w-7xl mx-auto px-6 py-20 scroll-mt-20 mb-12 overflow-hidden">
+        <div class="text-center mb-16">
+            <h2 class="text-2xl md:text-4xl font-bold mb-3 tracking-tight">DOKUMENTASI & GALERI</h2>
+            <div class="w-12 h-1 bg-blue-500 mx-auto rounded-full"></div>
+            <p class="text-slate-400 mt-4 max-w-2xl mx-auto text-sm">Intip keindahan pemandangan dan momen seru para pemain di dalam server AquaSphere.</p>
+        </div>
+
+        <!-- Slider Container -->
+        <div id="galeri-slider" class="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar py-4 cursor-grab active:cursor-grabbing">
+            
+            <!-- Foto 1: Tampilan In-Game -->
+            <div class="flex-shrink-0 w-[85%] md:w-[45%] lg:w-[30%] snap-center aspect-video bg-slate-900 border border-slate-900 rounded-2xl overflow-hidden group relative">
+                <img src="assets/images/Foto Keseruan Server.png" alt="Tampilan In-Game" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute top-3 right-3 bg-slate-950/80 backdrop-blur text-[10px] font-bold px-3 py-1 rounded-full text-blue-400 border border-blue-500/30 z-10">
+                    Middle of Lake
+                </div>
+                <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 z-0">
+                    <span class="text-xs font-semibold tracking-wider uppercase text-white">Tampilan In-Game</span>
+                </div>
+            </div>
+
+            <!-- Foto 2: Sunset In Lake -->
+            <div class="flex-shrink-0 w-[85%] md:w-[45%] lg:w-[30%] snap-center aspect-video bg-slate-900 border border-slate-900 rounded-2xl overflow-hidden group relative">
+                <img src="assets/images/Sunset In Lake.png" alt="Sunset In Lake" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                    <span class="text-xs font-semibold tracking-wider uppercase text-white">Pemandangan Sunset</span>
+                </div>
+            </div>
+
+            <!-- Foto 3: Camp Ground -->
+            <div class="flex-shrink-0 w-[85%] md:w-[45%] lg:w-[30%] snap-center aspect-video bg-slate-900 border border-slate-900 rounded-2xl overflow-hidden group relative">
+                <img src="assets/images/Camp Ground.png" alt="Camp Ground" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                    <span class="text-xs font-semibold tracking-wider uppercase text-white">Area Camp Ground</span>
+                </div>
+            </div>
+
+            <!-- Foto 4: Pantai -->
+            <div class="flex-shrink-0 w-[85%] md:w-[45%] lg:w-[30%] snap-center aspect-video bg-slate-900 border border-slate-900 rounded-2xl overflow-hidden group relative">
+                <img src="assets/images/Pantai.png" alt="Pantai" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                    <span class="text-xs font-semibold tracking-wider uppercase text-white">Pantai Tersembunyi</span>
+                </div>
+            </div>
+
+            <!-- Foto 5: Secret Lake -->
+            <div class="flex-shrink-0 w-[85%] md:w-[45%] lg:w-[30%] snap-center aspect-video bg-slate-900 border border-slate-900 rounded-2xl overflow-hidden group relative">
+                <img src="assets/images/Secret Lake.png" alt="Secret Lake" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                    <span class="text-xs font-semibold tracking-wider uppercase text-white">Danau Rahasia</span>
+                </div>
+            </div>
+
+            <!-- Foto 6: Danau Utama -->
+            <div class="flex-shrink-0 w-[85%] md:w-[45%] lg:w-[30%] snap-center aspect-video bg-slate-900 border border-slate-900 rounded-2xl overflow-hidden group relative">
+                <img src="assets/images/Danau.png" alt="Danau Utama" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                    <span class="text-xs font-semibold tracking-wider uppercase text-white">Danau Utama</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="fixed bottom-0 left-0 w-full z-50 bg-slate-950/95 border-t border-slate-900 py-4 px-6 flex flex-wrap justify-center items-center gap-4 sm:gap-8 md:gap-12 text-[10px] sm:text-xs font-bold tracking-widest text-slate-400">
+        <a href="https://discord.gg/ghHvQjGcq" target="_blank" class="hover:text-blue-400 transition-colors">
+            DISCORD
+        </a>
+        <a href="#" class="hover:text-purple-400 transition-colors">
+            INSTAGRAM
+        </a>
+        <a href="https://www.roblox.com/share/g/549588540" target="_blank" class="hover:text-white transition-colors">
+            ROBLOX COMMUNITY
+        </a>
+        <a href="#" class="hover:text-pink-400 transition-colors">
+            TIKTOK
+        </a>
+        <a href="#" class="hover:text-red-500 transition-colors">
+            YOUTUBE
+        </a>
+    </footer>
+
+    <script>
+        const slider = document.getElementById('galeri-slider');
+        let isHovered = false;
+
+        // 1. Trik Ilusi: Gandakan (clone) semua foto ke bagian belakang 
+        // agar seolah-olah fotonya tidak ada habisnya
+        const originalCards = Array.from(slider.children);
+        originalCards.forEach(card => {
+            const clone = card.cloneNode(true);
+            slider.appendChild(clone);
+        });
+
+        // Hapus class scroll-smooth bawaan HTML agar reset instan tidak memiliki animasi
+        slider.classList.remove('scroll-smooth');
+
+        setInterval(() => {
+            if (!isHovered) {
+                const cardElement = slider.querySelector('div');
+                const cardWidth = cardElement.offsetWidth;
+                const gap = parseFloat(window.getComputedStyle(slider).gap) || 24;
+                const step = cardWidth + gap;
+
+                // 2. Cek apakah layar sudah mencapai pertengahan (batas akhir foto asli)
+                if (slider.scrollLeft >= slider.scrollWidth / 2) {
+                    // Jika iya, kembalikan posisi ke awal (0) secara SANGAT INSTAN 
+                    // (Pengunjung tidak akan sadar karena fotonya kembar)
+                    slider.scrollTo({ left: 0, behavior: 'auto' });
+                }
+
+                // 3. Beri jeda super singkat untuk memastikan reset selesai, baru geser halus
+                setTimeout(() => {
+                    slider.scrollBy({ left: step, behavior: 'smooth' });
+                }, 50);
+            }
+        }, 3000); // Bergeser setiap 3 detik
+
+        // Hentikan geseran saat pengunjung melihat foto (hover/sentuh)
+        slider.addEventListener('mouseenter', () => isHovered = true);
+        slider.addEventListener('mouseleave', () => isHovered = false);
+        slider.addEventListener('touchstart', () => isHovered = true);
+        slider.addEventListener('touchend', () => {
+            setTimeout(() => isHovered = false, 2000); 
+        });
+    </script>
+</body>
+</html>
