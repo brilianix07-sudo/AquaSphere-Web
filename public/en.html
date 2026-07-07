@@ -34,28 +34,30 @@
 </head>
 <body class="bg-slate-950 text-slate-100 font-sans antialiased pb-24 overflow-x-hidden w-full">
 
-    <nav class="fixed top-0 left-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-900 px-6 md:px-12 py-4 flex justify-between items-center relative">
-        <div class="flex items-center gap-3">
-            <img src="assets/images/LOGO AQUASPHERE v2.png" alt="AquaSphere Logo" class="h-10 w-auto drop-shadow-[0_0_8px_rgba(56,189,248,0.5)]">
-            <div class="text-xl font-black tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 hidden sm:block">
-                AQUASPHERE
-            </div>
-        </div>
+    <!-- NAVBAR -->
+    <header class="fixed top-0 left-0 w-full z-50 py-4 px-6 md:px-12 flex justify-between items-center bg-slate-950/80 backdrop-blur-md border-b border-slate-900">
         
-       <!-- Menu Navigasi Tengah (Hanya tampil di Desktop) -->
+        <!-- Bagian Kiri: Logo & Nama -->
+        <a href="#" class="flex items-center gap-3">
+            <img src="assets/images/LOGO AQUASPHERE v2.png" alt="AquaSphere Logo" class="w-10 h-10 object-contain">
+            <span class="text-xl font-black tracking-widest text-blue-400 uppercase">AQUASPHERE</span>
+        </a>
+
+        <!-- Bagian Tengah: Menu Navigasi -->
         <nav class="hidden md:flex items-center gap-6 lg:gap-8 text-xs lg:text-sm font-bold tracking-widest text-slate-300">
+            <a href="#" class="hover:text-white transition-colors">HOME</a>
             <a href="#informasi" class="hover:text-white transition-colors">SERVER INFO</a>
             <a href="#tutorial" class="hover:text-white transition-colors">TUTORIAL</a>
             <a href="#map" class="hover:text-white transition-colors">MAP</a>
             <a href="#galeri" class="hover:text-white transition-colors">GALLERY</a>
         </nav>
+
+        <!-- Bagian Kanan: Tombol Discord -->
+        <a href="https://discord.gg/ghHvQjGcq" target="_blank" class="hidden md:inline-flex border border-slate-700 hover:border-blue-500 hover:bg-blue-600/20 text-slate-300 hover:text-white px-6 py-2.5 rounded-full text-xs font-bold tracking-widest transition-all">
+            JOIN DISCORD
+        </a>
         
-        <div>
-            <a href="https://discord.gg/ghHvQjGcq" target="_blank" class="bg-blue-600/10 hover:bg-blue-600/20 text-blue-400 border border-blue-500/30 px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition-all">
-                Join Discord
-            </a>
-        </div>
-    </nav>
+    </header>
 
     <!-- HERO SECTION -->
     <section id="hero" class="min-h-screen w-full flex flex-col justify-center items-center text-center px-4 relative pt-16 overflow-hidden">
