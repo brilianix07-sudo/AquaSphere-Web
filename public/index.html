@@ -47,6 +47,18 @@
         <!-- Menu (Dipaksa persis di tengah layar) -->
         <div class="hidden lg:flex absolute left-1/2 -translate-x-1/2 space-x-8 text-xs uppercase tracking-widest font-semibold">
             <a href="#hero" class="hover:text-blue-400 transition-colors">Beranda</a>
+            <!-- HERO SECTION -->
+<section id="hero" class="min-h-screen w-full flex flex-col justify-center items-center text-center px-4 relative pt-16 overflow-hidden">
+        
+        <!-- === TAMBAHKAN KODE INI UNTUK SHADOW LOGO === -->
+        <div class="absolute inset-0 flex justify-center items-center opacity-[0.04] pointer-events-none z-0">
+            <!-- Efek blur-[2px] dan drop-shadow biru akan membuat logo tampak seperti bayangan/gradasi -->
+            <img src="assets/images/LOGO AQUASPHERE v2.png" alt="Background Logo" class="w-[90%] md:w-[600px] object-contain blur-[2px] drop-shadow-[0_0_100px_rgba(59,130,246,0.8)]">
+        </div>
+        <!-- ============================================= -->
+
+        <!-- Efek Gradasi Cahaya Biru Lingkaran (Bawaan Anda sebelumnya, biarkan saja) -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-blue-600/20 rounded-full blur-[100px] pointer-events-none z-0"></div>
             <a href="#informasi" class="hover:text-blue-400 transition-colors">Informasi</a>
             <a href="#tutorial" class="hover:text-blue-400 transition-colors">Tutorial</a>
             <a href="#map" class="hover:text-blue-400 transition-colors">Map</a>
@@ -63,22 +75,36 @@
 
     <!-- HERO SECTION -->
     <section id="hero" class="min-h-screen w-full flex flex-col justify-center items-center text-center px-4 relative pt-16 overflow-hidden">
-        <!-- Efek Cahaya Latar Belakang -->
-        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[120px] pointer-events-none"></div>
         
-        <h1 class="text-4xl md:text-7xl font-extrabold tracking-tight mb-4 max-w-4xl bg-gradient-to-b from-white to-slate-400 text-transparent bg-clip-text">
-            AQUASPHERE COMMUNITY
-        </h1>
-        <p class="text-slate-400 md:text-xl max-w-2xl font-light tracking-wide mb-8">
-            Jelajahi dunia virtual tanpa batas. Rasakan pengalaman bermain game Roblox yang premium, imersif, dan penuh petualangan bersama komunitas kami.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4">
-            <a href="#informasi" class="bg-blue-600 hover:bg-blue-500 text-white px-8 py-3.5 rounded-xl font-semibold shadow-lg shadow-blue-500/20 transition-all">
-                Lihat Informasi Server
-            </a>
-            <a href="#galeri" class="bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-800 px-8 py-3.5 rounded-xl font-semibold transition-all">
-                Lihat Galeri
-            </a>
+        <!-- === TAMBAHKAN KODE INI UNTUK SHADOW LOGO === -->
+        <div class="absolute inset-0 flex justify-center items-center opacity-[0.04] pointer-events-none z-0">
+            <!-- Efek blur-[2px] dan drop-shadow biru akan membuat logo tampak seperti bayangan/gradasi -->
+            <img src="assets/images/LOGO AQUASPHERE v2.png" alt="Background Logo" class="w-[90%] md:w-[600px] object-contain blur-[2px] drop-shadow-[0_0_100px_rgba(59,130,246,0.8)]">
+        </div>
+        <!-- ============================================= -->
+        
+        <!-- Efek Gradasi Cahaya Biru Lingkaran (Bawaan Anda sebelumnya, biarkan saja) -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-blue-600/20 rounded-full blur-[100px] pointer-events-none z-0"></div>
+        
+        <!-- Efek Cahaya Latar Belakang -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[120px] pointer-events-none z-0"></div>
+        
+        <!-- === WRAPPER TEKS & TOMBOL (Z-10 agar di atas logo) === -->
+        <div class="relative z-10 flex flex-col items-center">
+            <h1 class="text-4xl md:text-7xl font-extrabold tracking-tight mb-4 max-w-4xl bg-gradient-to-b from-white to-slate-400 text-transparent bg-clip-text">
+                AQUASPHERE COMMUNITY
+            </h1>
+            <p class="text-slate-400 md:text-xl max-w-2xl font-light tracking-wide mb-8">
+                Jelajahi dunia virtual tanpa batas. Rasakan pengalaman bermain game Roblox yang premium, imersif, dan penuh petualangan bersama komunitas kami.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="#informasi" class="bg-blue-600 hover:bg-blue-500 text-white px-8 py-3.5 rounded-xl font-semibold shadow-lg shadow-blue-500/20 transition-all">
+                    Lihat Informasi Server
+                </a>
+                <a href="#galeri" class="bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-800 px-8 py-3.5 rounded-xl font-semibold transition-all">
+                    Lihat Galeri
+                </a>
+            </div>
         </div>
     </section>
 
@@ -275,13 +301,12 @@
         
        <!-- Kiri: Bahasa (Di file index.html) -->
         <a href="en.html" class="flex-1 flex justify-start items-center gap-1.5 cursor-pointer flex-shrink-0 group">
-            <!-- Ikon globe menyala biru -->
             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="stroke-blue-400"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
             <span class="uppercase tracking-widest font-bold">
-                <!-- ID menyala, EN redup -->
-                <span class="text-blue-400 drop-shadow-[0_0_8px_rgba(96,165,250,0.5)]">ID</span> 
+                <!-- ID menyala terang, EN redup -->
+                <span class="text-blue-400 drop-shadow-[0_0_8px_rgba(96,165,250,0.8)]">ID</span> 
                 <span class="text-slate-600 mx-0.5">/</span> 
-                <span class="text-slate-500 hover:text-slate-300 transition-colors">EN</span>
+                <span class="text-slate-500 group-hover:text-slate-300 transition-colors">EN</span>
             </span>
         </a>
 
